@@ -1,0 +1,10 @@
+.border-example {
+    width: 320px;
+    height: 260px;
+    border: 1px solid black;  /* Simple blue border */
+    border-image-source: url('images ().png');  /* Image border */
+    border-image-slice: 40;  /* Slice the image */
+    border-image-repeat: s;  /* Stretch to fit the border */
+    padding: 10px;}
+
+

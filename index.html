@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASHS</title>
+  <link rel="stylesheet" href="dropdown.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: lightgrey;
+      padding: 10px 20px;
+    }
+
+    header table {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown .content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 150px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown:hover .content {
+      display: block;
+    }
+
+    .dropdown a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .video-header {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .video-header video {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-container div {
+      text-align: center;
+      flex: 1 1 calc(33.333% - 40px);
+      box-sizing: border-box;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+  
+    @media (max-width: 768px) {
+      .image-container div {
+        flex: 1 1 100%; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <table>
+      <tr>
+        <td>
+          <div class="dropdown">
+            <button>&#9776;</button>
+            <div class="content">
+              <a href="Page 3 napo.html">Mission & Vision</a>
+              <a href="Page 4 na po.html">Events</a>
+              <a href="PAGE1.html">Home</a>           </div>
+        <td><img src="logo.png" alt="School Logo"></td>
+        <td><h3 style="color: maroon;"><font face="Georgia">STAND ALONE SENIOR HIGH SCHOOL</h3></td>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </header>
+        <br>
+    <center>
+  <div class="video-header">
+    <video autoplay muted controls loop>
+      <source src="luh.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <hr>
+  <div class="image-container">
+    <div>
+      <img src="school.jpg" alt="School">
+      <h2><font color="Maroon">THE SCHOOL</h2>
+      <h6><font face="Arial" color="maroon">STAND ALONE SENIOR HIGH SCHOOL offers a wide range of academic strands under the K-12 Senior High School Program, ensuring that each student can pursue a path aligned with their interests and goals.</h5>
+    </div>
+    <div>
+      <img src="teachers.jpg" alt="Teachers">
+      <h6><font color="maroon">MEET THE TEACHERS! The teachers at Stand Alone Senior High School are the backbone of our institution, dedicated to inspiring and shaping the minds of tomorrow.</h5>
+    </div>
+  </div>
+        <br>
+        <hr>
+        <br>
+        <h1><font face="Georgia" color=maroon>Gallery</font></h1>
+        <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Image Carousel</title>
+  <style>
+    /* Overall card container style */
+    .card-carousel {
+      width: 100%;
+      max-width: 300px;
+      margin: 25px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card content that holds images */
+    .card-content {
+      display: flex;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    /* Style for each image inside the carousel */
+    .card-content img {
+      width: 50%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* Card Animation */
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(-400%);
+      }
+    }
+
+    /* Apply the animation to the card-content */
+    .card-content {
+      animation: slide 10s infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-carousel">
+    <div class="card-content">
+      <img src="1.jpg" alt="Image 1">
+      <img src="2.jpg" alt="Image 2">
+      <img src="3.jpg" alt="Image 3">
+      <img src="4.jpg" alt="Image 4">
+      <img src="5.jpg" alt="Image 2">
+      <img src="6.jpg" alt="Image 3">
+      <img src="7.jpg" alt="Image 4">
+    </div>
+  </div>
+  <center>
+<p><h6><font face="Arial">"Good day, future leaders and SASHSANS! Are you ready to take the first step toward achieving your dreams? At STAND ALONE SENIOR HIGH SCHOOL, we empower students like you to uncover your passion and unlock your potential."
+  </p>
+</body>
+</html>
+  <br>
+  <hr>
+  <br>
+<center><h1><font face="Georgia" color="maroon">STRANDS!</font></h1>
+  <br>
+  <hr>
+  <br>
+  <center><img src="logo.png" width="50" height="40">
+  <table border="0" size="50" color="Black">
+    <td><a href="Stem.html" style="text-decoration:none"><h2><font color="maroon">STEM</h3></font></a></td>
+    <td>‎<font color=white><h3>LAL</h3></font></td>
+    <td><a href="ICT.html" style="text-decoration:none"><h2><font color="maroon">ICT</h3></font></a></td>
+    <td>‎<font color=white><h3>LAL</h3></font></td>
+    <td><a href="GAS.html" style="text-decoration:none"><h2><font color="maroon">GAS</h3></font></a></td>
+    <td>‎<font color=white><h3>LAL</h3></font></td>
+    <td><a href="HUMMS.html" style="text-decoration:none"><h2><font color="maroon">HUMMS</h3></font></a></td>
+  </table>
+    <br>
+    <hr>
+    <br>
+  <p><h6><font color="maroon">"Good day, future leaders and SASHSANS!   
+Are you ready to take the first step toward achieving your dreams? At STAND ALONE SENIOR HIGH SCHOOL, we empower students like you to uncover your passion and unlock your potential. We proudly offer a variety of Senior High School strands tailored to fit your unique interests and aspirations.</font>    
+    </p>
+  <br>
+  <hr>
+  <br>
+  <p><font color="maroon"><h5>For aspiring professionals and innovators, the Academic Track has something for everyone. Whether it's Accountancy, Business, and Management (ABM) for future entrepreneurs, Science, Technology, Engineering, and Mathematics (STEM) for budding scientists and engineers, or Humanities and Social Sciences (HUMSS) for those with a heart for service and leadership, our programs will equip you with the knowledge and skills to excel in your chosen field.</h4></font></p>
+    <br>
+    <hr>
+    <br>
+    <p><font color="maroon"><h5>For the creatively inclined and technically minded, explore the Technical-Vocational-Livelihood (TVL) Track. From IT and culinary arts to automotive and agriculture, you'll gain hands-on experience and certifications that can lead directly to a fulfilling career or business opportunity.</h5></font></p>
+    <br>
+    <hr>
+    <br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: maroon;
+            transition: all 0.5s ease;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .box:hover {
+            width: 350px; 
+            height: 100px; 
+            background-color: maroon; 
+        }
+    </style>
+</head>
+<head>
+    <style>
+        table {
+            width: 100%;
+        }
+        th, td {
+            border: 0px solid #ddd; 
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;     }
+         
+    </style>
+</head>
+<body>
+
+<h2>Enroll Now!</h2>
+<table>
+    <tr>
+        <th>Strands</th>
+        <th>Strands</th>
+    </tr>
+    <tr>
+        <td>STEM</td>
+        <td>ICT</td>
+    </tr>
+    <tr>
+        <td>HUMMS</td>
+        <td>GAS</td>
+   </tr>
+    <tr>
+       
+</table>
+
+</body>
+</html>
+<body>
+    <div class="box"><a href="page 5 po.html" style="text-decoration: none"><font color="white">ENROLL NOW!</div>
+  <br>
+  <hr>
+  <br>
+</body>
+</html>

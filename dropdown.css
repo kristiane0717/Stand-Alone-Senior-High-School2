@@ -1,0 +1,62 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown button {
+  background: linear-gradient(45deg, #444, #666); /* Grey gradient background */
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown .content {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background: #333; /* Solid grey background */
+  min-width: 150px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px) scale(0.95); /* Start smaller and above position */
+  transition: all 0.4s ease;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdown a {
+  display: block;
+  color: white; /* White text for better contrast on grey */
+  text-decoration: none;
+  padding: 12px 18px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.dropdown a:hover {
+  background: linear-gradient(45deg, #555, #777); /* Subtle gradient on hover */
+  color: white;
+  transform: scale(1.02); /* Slightly enlarge the link */
+}
+
+.dropdown:hover .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1); /* Slide down and grow to full size */
+}
+
+.dropdown:hover button {
+  background: linear-gradient(45deg, #666, #444); /* Reverse grey gradient for hover */
+}
